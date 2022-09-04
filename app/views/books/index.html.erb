@@ -1,18 +1,22 @@
 <h1>Books</h1>
 
 <main>
-
-  <% @books.each do|book| %>
   <p>Title</p>
+  <p>Body</p>
+  </main>
+
+  <div class="post">
+  <% @books.each do|book| %>
   <span><%= book.title %></span>
 
-  <p>Body</p>
   <span><%= book.body %></span>
+
+  <%= link_to 'Show',"/books" %>
+  <%= link_to 'Edit',"/books" %>
+  <%= link_to 'Delete',"/books" %>
   <% end %>
+  </div>
 
-　<%= link_to 'Show',/book_path(@book) %>
-
-</main>
 
 <div class="form">
 　<%= form_with model: @book do |f| %>
