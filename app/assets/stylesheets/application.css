@@ -14,3 +14,40 @@
  *= require_self
  */
 
+*{
+  margin:0;
+  padding:0;
+  box-sizing:border-box;
+}
+
+h1{
+  margin:30px 30px 0;
+}
+
+main{
+  display: flex;
+}
+
+main > p{
+  font-weight: bold;
+}
+
+.form{
+  margin: 20px 30px;
+}
+
+h4{
+  margin-top: 10px;
+}
+
+.textarea{
+  width: 180px;
+  height: 70px;
+}
+
+.createbook{
+  width: 100px;
+  height: 20px;
+  display: block;
+  margin-top: 10px;
+}
