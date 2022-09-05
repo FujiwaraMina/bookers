@@ -24,6 +24,10 @@ h1{
   margin:30px 30px 0;
 }
 
+h2{
+  margin:30px 30px 0;
+}
+
 main{
   display: flex;
 }
@@ -43,7 +47,7 @@ main > .body > span{
 }
 
 h4{
-  margin-top: 10px;
+  margin: 0 20px;
 }
 
 .textarea{
@@ -55,7 +59,7 @@ h4{
   width: 100px;
   height: 20px;
   display: block;
-  margin-top: 10px;
+  margin: 10px 20px;
 }
 
 .post{
@@ -64,3 +68,55 @@ h4{
   display: block;
 }
 
+.showtitle{
+  display: flex;
+  margin: 30px 30px;
+}
+
+.showtitle > h4{
+  margin: 0 30px;
+}
+
+.showtitle > p{
+margin: 0 10px ;
+}
+
+.showbody{
+  display: flex;
+  margin: 0 30px;
+}
+
+.showbody > h4{
+  margin: 0 30px;
+}
+
+.showbody > p{
+  margin: 0 10px;
+}
+
+.editpost{
+  margin:0 30px;
+}
+
+.updatebook{
+  display: block;
+  margin: 10px 30px;
+}
+
+.shows{
+  display: flex;
+  margin: 30px 30px;
+}
+
+.shows > p{
+  margin:0;
+}
+
+.edits{
+  display: flex;
+  margin: 10px 30px;
+}
+
+.edits > p{
+  margin: 0;
+}

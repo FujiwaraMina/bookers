@@ -1,16 +1,18 @@
+
+
 <h1>Books</h1>
 
 <main>
 
   <div class="title">
-   <p>Title</p>
+   <p><b>Title</b></p>
    <% @books.each do|book| %>
    <span><%= book.title %></span>
    <% end %>
   </div>
 
   <div class="body">
-   <p>Body</p>
+   <p><b>Body</b></p>
    <% @books.each do|book| %>
    <span><%= book.body %></span>
    <% end %>
