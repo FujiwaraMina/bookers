@@ -1,28 +1,32 @@
 <h1>Books</h1>
 
 <main>
-  
+
   <div class="title">
-  <p>Title</p>
+   <p>Title</p>
+   <% @books.each do|book| %>
+   <span><%= book.title %></span>
+   <% end %>
   </div>
-  
-  <div class="body"></div>
-  <p>Body</p>
+
+  <div class="body">
+   <p>Body</p>
+   <% @books.each do|book| %>
+   <span><%= book.body %></span>
+   <% end %>
   </div>
-  
-  </main>
 
   <div class="post">
-  <% @books.each do|book| %>
-  <span><%= book.title %></span>
-
-  <span><%= book.body %></span>
-
-  <%= link_to 'Show',"/books" %>
-  <%= link_to 'Edit',"/books" %>
-  <%= link_to 'Delete',"/books" %>
-  <% end %>
+   <% @books.each do|book| %>
+   <%= link_to 'Show',"/books/#{book.id}" %>
+   <%= link_to 'Edit',edit_book_path(book.id) %>
+   <%= link_to 'Delete',destroy_book_path(book.id),method: :delete,"data-confirm" => "Are you sure?" %>
+   <% end %>
   </div>
+
+  </main>
+
+
 
 
 <div class="form">
